@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahmoud Mohamed · Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #F7F8FA; color: #1B1F2A;
+      font-family: 'Inter', sans-serif; line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3, .display { font-family: 'Space Grotesk', sans-serif; letter-spacing: -0.02em; }
+    .mono { font-family: 'JetBrains Mono', monospace; }
+    a { color: inherit; text-decoration: none; }
+    :focus-visible { outline: 2px solid #3654FF; outline-offset: 3px; }
+
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+
+    /* header */
+    header {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(247,248,250,0.88); backdrop-filter: blur(8px);
+      border-bottom: 1px solid #E4E7EC;
+    }
+    nav.wrap {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 76px;
+    }
+    .logo {
+      font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 20px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .logo-mark {
+      width: 38px; height: 38px; border-radius: 10px;
+      background: #1B1F2A; color: #F7F8FA;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'JetBrains Mono', monospace; font-size: 14px;
+    }
+    .nav-links { display: flex; gap: 32px; font-size: 14px; font-weight: 500; }
+    .nav-links a { color: #6B7280; transition: color 0.2s; }
+    .nav-links a:hover { color: #1B1F2A; }
+
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 10px 22px; border-radius: 999px; font-size: 14px; font-weight: 600;
+      transition: transform 0.15s, box-shadow 0.15s; border: 1px solid transparent;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: #1B1F2A; color: #fff; }
+    .btn-primary:hover { box-shadow: 0 10px 24px -10px rgba(27,31,42,0.5); }
+    .btn-ghost { border-color: #E4E7EC; background: #fff; color: #1B1F2A; }
+    .btn-ghost:hover { border-color: #3654FF; color: #3654FF; }
+
+    /* hero */
+    .hero { padding: 80px 0 72px; }
+    .hero-content {
+      display: grid;
+      grid-template-columns: 1fr 280px;
+      gap: 48px;
+      align-items: center;
+    }
+    @media (max-width: 768px) {
+      .hero-content {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+    }
+    .hero-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero-avatar {
+      width: 390px;
+      height: 390px;
+      object-fit: cover;
+        border-radius: 10%;
+      background: #EEF0FF;
+    }
+    @media (max-width: 768px) {
+      .hero-avatar {
+        width: 290px;
+        height: 290px;
+      }
+    }
+
+    .tags-row { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 28px; }
+    .tag {
+      font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.03em;
+      padding: 6px 14px; border-radius: 999px;
+      background: #EEF0FF; color: #3654FF; border: 1px solid rgba(54,84,255,0.15);
+    }
+    .tag.coral { background: #FFEDE7; color: #C74B2E; border-color: rgba(255,107,74,0.2); }
+
+    .hero h1 { font-size: clamp(44px, 7vw, 74px); font-weight: 700; line-height: 1.05; margin-bottom: 16px; }
+    .hero-role {
+      font-family: 'JetBrains Mono', monospace; font-size: clamp(16px, 2vw, 20px);
+      color: #3654FF; margin-bottom: 22px; min-height: 32px;
+      display: flex; align-items: center; gap: 6px;
+    }
+    .caret {
+      display: inline-block; width: 2px; height: 20px; background: #3654FF;
+      animation: blink 1s steps(1) infinite;
+    }
+    @keyframes blink { 50% { opacity: 0; } }
+    .hero p.lead { max-width: 580px; color: #6B7280; font-size: 17px; margin-bottom: 36px; }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+
+    section { padding: 72px 0; }
+    .section-head {
+      display: flex; align-items: baseline; gap: 14px; margin-bottom: 44px;
+    }
+    .section-eyebrow {
+      font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #6B7280; white-space: nowrap;
+    }
+    .section-head h2 { font-size: clamp(26px, 4vw, 36px); font-weight: 600; }
+    .section-head::after { content: ''; flex: 1; height: 1px; background: #E4E7EC; }
+
+    /* about */
+    .about-grid {
+      display: grid; grid-template-columns: 1.5fr 1fr; gap: 48px; align-items: start;
+    }
+    .about-text p { color: #1B1F2A; font-size: 16px; margin-bottom: 14px; }
+    .stat-card {
+      background: #fff; border: 1px solid #E4E7EC; border-radius: 14px; padding: 24px; margin-bottom: 16px;
+    }
+    .stat-card .num { font-family: 'Space Grotesk', sans-serif; font-size: 32px; font-weight: 700; color: #3654FF; }
+    .stat-card .label { font-size: 13px; color: #6B7280; margin-top: 4px; }
+
+    /* avatar inside about */
+    .about-avatar-wrapper {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 24px;
+    }
+    .about-avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+      box-shadow: 0 8px 24px -12px rgba(27,31,42,0.25);
+      background: #EEF0FF;
+    }
+
+    /* skills */
+    .skills-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
+    }
+    .skill-card {
+      background: #fff; border: 1px solid #E4E7EC; border-radius: 16px;
+      padding: 28px 22px; transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+    .skill-card:hover {
+      border-color: #3654FF; transform: translateY(-4px);
+      box-shadow: 0 12px 28px -16px rgba(27,31,42,0.18);
+    }
+    .skill-card .icon {
+      width: 48px; height: 48px; border-radius: 12px;
+      background: #EEF0FF; color: #3654FF;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 18px;
+    }
+    .skill-card .icon svg {
+      width: 26px;
+      height: 26px;
+      stroke: currentColor;
+      stroke-width: 1.8;
+      fill: none;
+    }
+    .skill-card:nth-child(2) .icon { background: #FFEDE7; color: #C74B2E; }
+    .skill-card:nth-child(3) .icon { background: #E6F7ED; color: #0B7B4A; }
+    .skill-card:nth-child(4) .icon { background: #F0E6FF; color: #6B3FA0; }
+
+    .skill-card h3 { font-size: 17px; margin-bottom: 16px; }
+    .skill-list {
+      list-style: none; display: flex; flex-direction: column; gap: 10px;
+    }
+    .skill-list li {
+      font-size: 13px; color: #4B5563; font-family: 'JetBrains Mono', monospace;
+      padding-left: 18px; position: relative;
+    }
+    .skill-list li::before {
+      content: ''; position: absolute; left: 0; top: 7px;
+      width: 7px; height: 7px; border-radius: 50%;
+      background: #3654FF;
+    }
+    .skill-card:nth-child(2) .skill-list li::before { background: #C74B2E; }
+    .skill-card:nth-child(3) .skill-list li::before { background: #0B7B4A; }
+    .skill-card:nth-child(4) .skill-list li::before { background: #6B3FA0; }
+
+    .skill-progress {
+      margin-top: 12px; height: 4px; background: #E4E7EC; border-radius: 4px;
+    }
+    .skill-progress span { display: block; height: 100%; border-radius: 4px; background: #3654FF; }
+    .skill-card:nth-child(2) .skill-progress span { background: #C74B2E; }
+    .skill-card:nth-child(3) .skill-progress span { background: #0B7B4A; }
+    .skill-card:nth-child(4) .skill-progress span { background: #6B3FA0; }
+
+    /* projects */
+    .projects-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+    }
+    .project-card {
+      background: #fff; border: 1px solid #E4E7EC; border-radius: 16px;
+      overflow: hidden; display: flex; flex-direction: column;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .project-card:hover {
+      box-shadow: 0 20px 40px -24px rgba(27,31,42,0.25);
+      transform: translateY(-6px);
+    }
+    .project-cover {
+      height: 140px; background: linear-gradient(135deg, #EEF0FF, #FFEDE7);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'JetBrains Mono', monospace; font-size: 13px;
+      color: #6B7280; letter-spacing: 0.05em;
+    }
+    .project-body { padding: 24px; display: flex; flex-direction: column; flex: 1; }
+    .project-body h3 { font-size: 18px; margin-bottom: 10px; }
+    .project-body p { font-size: 14px; color: #6B7280; margin-bottom: 16px; flex: 1; }
+    .project-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+    .project-tags span {
+      font-size: 11px; font-family: 'JetBrains Mono', monospace;
+      background: #F7F8FA; border: 1px solid #E4E7EC; color: #4B5563;
+      padding: 3px 10px; border-radius: 6px;
+    }
+    .project-link {
+      font-size: 13px; font-weight: 600; color: #3654FF;
+      display: inline-flex; align-items: center; gap: 6px;
+    }
+
+    /* contact */
+    .contact-card {
+      background: #1B1F2A; color: #fff; border-radius: 24px;
+      padding: 56px 48px; display: grid;
+      grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: center;
+    }
+    .contact-card h2 { font-size: clamp(26px, 4vw, 38px); margin-bottom: 14px; }
+    .contact-card p { color: #A9AEBC; font-size: 15px; max-width: 420px; }
+    .contact-list {
+      list-style: none; display: flex; flex-direction: column; gap: 12px;
+    }
+    .contact-list a {
+      display: flex; align-items: center; gap: 14px;
+      font-size: 14px; padding: 12px 18px; border-radius: 12px;
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08);
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .contact-list a:hover {
+      background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.25);
+    }
+    .contact-list .ic {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .contact-list .ic svg {
+      width: 20px;
+      height: 20px;
+      stroke: #FF6B4A;
+      stroke-width: 1.8;
+      fill: none;
+    }
+
+    footer {
+      padding: 32px 0; text-align: center; font-size: 13px; color: #6B7280;
+    }
+
+    @media (max-width: 860px) {
+      .about-grid { grid-template-columns: 1fr; }
+      .skills-grid { grid-template-columns: repeat(2, 1fr); }
+      .projects-grid { grid-template-columns: 1fr; }
+      .contact-card { grid-template-columns: 1fr; padding: 40px 28px; }
+    }
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+      .skills-grid { grid-template-columns: 1fr; }
+      .hero { padding: 56px 0 48px; }
+      section { padding: 48px 0; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <nav class="wrap">
+    <div class="logo"><span class="logo-mark">MM</span> Mahmoud Mohamed</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a class="btn btn-ghost" href="#" target="_blank">Open CV</a>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-content">
+        <div>
+          <div class="tags-row">
+            <span class="tag">WEB</span><span class="tag">SEC</span>
+            <span class="tag coral">DESIGN</span><span class="tag">AI</span>
+          </div>
+          <h1>Mahmoud Mohamed</h1>
+          <div class="hero-role mono">
+            <span id="role-text">Web Developer</span><span class="caret"></span>
+          </div>
+          <p class="lead">I build websites, secure them, design their visuals, and automate the boring parts with AI — four disciplines, one goal: things that work, look good, and hold up.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-ghost" href="#contact">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="Max_a_The_background_behin.png" alt="Mahmoud Mohamed" class="hero-avatar">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-eyebrow mono">01 · ABOUT</span>
+        <h2>About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="about-avatar-wrapper">
+          </div>
+          <p>I'm Mahmoud Mohamed, a versatile technologist who works across four different worlds: building the web, defending it, designing for it, and automating it with AI.</p>
+          <p>I started with web development, learning how to turn ideas into fast, responsive websites using modern tools and clean code.</p>
+          <p>Along the way, I got curious about how systems break, which led me into cyber security, where I study vulnerabilities and learn how to protect real applications.</p>
+          <p>I also have a creative side: I design logos, posters, and digital graphics that communicate a clear message.</p>
+          <p>Recently, I've been exploring AI automation, building small tools and scripts that save time and remove repetitive work.</p>
+          <p>My goal is simple: keep learning new skills and use them to build things that are useful, secure, and good-looking.</p>
+        </div>
+        <div>
+          <div class="stat-card"><div class="num">4</div><div class="label">Areas of focus — Web, Security, Design, AI</div></div>
+          <div class="stat-card"><div class="num">B2</div><div class="label">English proficiency level</div></div>
+          <div class="stat-card"><div class="num">6+</div><div class="label">Projects shipped across disciplines</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-eyebrow mono">02 · SKILLS</span>
+        <h2>What I Work With</h2>
+      </div>
+      <div class="skills-grid">
+        <!-- Web Development -->
+        <div class="skill-card">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5"/>
+              <path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3>Web Development</h3>
+          <ul class="skill-list">
+            <li>HTML, CSS, JavaScript</li><li>React</li>
+            <li>Node.js</li><li>Responsive Design</li><li>Git &amp; GitHub</li>
+          </ul>
+          <div class="skill-progress"><span style="width:90%"></span></div>
+        </div>
+        <!-- Cyber Security -->
+        <div class="skill-card">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="M9 12l2 2 4-4"/>
+            </svg>
+          </div>
+          <h3>Cyber Security</h3>
+          <ul class="skill-list">
+            <li>Network Security</li><li>Penetration Testing</li>
+            <li>Vulnerability Assessment</li><li>Linux</li><li>OWASP Top 10</li>
+          </ul>
+          <div class="skill-progress"><span style="width:78%"></span></div>
+        </div>
+        <!-- Graphic Design -->
+        <div class="skill-card">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 19l7-7 3 3-7 7-3-3z"/>
+              <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+              <path d="M2 2l7.586 7.586"/>
+              <circle cx="11" cy="11" r="2"/>
+            </svg>
+          </div>
+          <h3>Graphic Design</h3>
+          <ul class="skill-list">
+            <li>Adobe Photoshop</li><li>Adobe Illustrator</li>
+            <li>Figma</li><li>Branding &amp; Logo</li><li>UI Design</li>
+          </ul>
+          <div class="skill-progress"><span style="width:85%"></span></div>
+        </div>
+        <!-- AI Automation -->
+        <div class="skill-card">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 2v4"/>
+              <path d="M12 18v4"/>
+              <path d="M4.93 4.93l2.83 2.83"/>
+              <path d="M16.24 16.24l2.83 2.83"/>
+              <path d="M2 12h4"/>
+              <path d="M18 12h4"/>
+              <path d="M4.93 19.07l2.83-2.83"/>
+              <path d="M16.24 7.76l2.83-2.83"/>
+            </svg>
+          </div>
+          <h3>AI Automation</h3>
+          <ul class="skill-list">
+            <li>Python</li><li>Prompt Engineering</li>
+            <li>Workflow Automation</li><li>API Integration</li><li>Chatbot Building</li>
+          </ul>
+          <div class="skill-progress"><span style="width:72%"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-eyebrow mono">03 · PROJECTS</span>
+      <h2>Selected Work</h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- ChemStudio AI -->
+      <div class="project-card">
+        <div class="project-cover">AI · SCIENCE · 3D</div>
+        <div class="project-body">
+          <h3>ChemStudio AI — Interactive Chemistry Platform</h3>
+          <p>
+            AI-powered educational platform for interactive chemistry learning,
+            3D molecular visualization, chemical reactions, and intelligent
+            experiment generation for students and universities.
+          </p>
+          <div class="project-tags">
+            <span>AI</span>
+            <span>React</span>
+            <span>Node.js</span>
+            <span>3D</span>
+            <span>Chemistry</span>
+          </div>
+          <a class="project-link" href="#contact">View Project →</a>
+        </div>
+      </div>
+
+      <!-- AI Automation -->
+      <div class="project-card">
+        <div class="project-cover">AI AUTOMATION · N8N</div>
+        <div class="project-body">
+          <h3>AI Content Automation Engine</h3>
+          <p>
+            Automated content pipeline using AI and n8n to discover trending
+            topics, analyze viral potential, generate scripts, create media,
+            produce voiceovers, and prepare content for publishing.
+          </p>
+          <div class="project-tags">
+            <span>n8n</span>
+            <span>AI</span>
+            <span>APIs</span>
+            <span>Automation</span>
+            <span>Gemini</span>
+          </div>
+          <a class="project-link" href="#contact">View Project →</a>
+        </div>
+      </div>
+
+      <!-- Cybersecurity -->
+      <div class="project-card">
+        <div class="project-cover">CYBERSECURITY · WEB</div>
+        <div class="project-body">
+          <h3>Web Security Assessment Lab</h3>
+          <p>
+            Security testing environment for analyzing web applications,
+            identifying common vulnerabilities, and practicing penetration
+            testing methodologies based on OWASP security principles.
+          </p>
+          <div class="project-tags">
+            <span>Kali Linux</span>
+            <span>Nmap</span>
+            <span>Burp Suite</span>
+            <span>OWASP</span>
+          </div>
+          <a class="project-link" href="#contact">View Project →</a>
+        </div>
+      </div>
+
+      <!-- Network Security -->
+      <div class="project-card">
+        <div class="project-cover">NETWORK · SECURITY</div>
+        <div class="project-body">
+          <h3>Network Scanner & Security Dashboard</h3>
+          <p>
+            Python-based network security tool for discovering devices,
+            scanning network services, analyzing exposed ports, and exporting
+            security results through a simple dashboard.
+          </p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Nmap</span>
+            <span>Networking</span>
+            <span>Security</span>
+          </div>
+          <a class="project-link" href="#contact">View Project →</a>
+        </div>
+      </div>
+
+      <!-- Telegram Automation -->
+      <div class="project-card">
+        <div class="project-cover">AUTOMATION · TELEGRAM</div>
+        <div class="project-body">
+          <h3>Telegram AI Automation Bots</h3>
+          <p>
+            Custom Telegram bots connected to APIs and AI services for
+            automation workflows, notifications, data processing, and
+            intelligent user interactions.
+          </p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Telegram</span>
+            <span>APIs</span>
+            <span>AI</span>
+          </div>
+          <a class="project-link" href="#contact">View Project →</a>
+        </div>
+      </div>
+
+      <!-- Student Management -->
+      <div class="project-card">
+        <div class="project-cover">SYSTEM · SaaS</div>
+        <div class="project-body">
+          <h3>CodeveraST — Student Management System</h3>
+          <p>
+            Management platform for educational centers with student records,
+            attendance tracking, payment management, QR identification,
+            reporting, and administrative dashboards.
+          </p>
+          <div class="project-tags">
+            <span>Web</span>
+            <span>JavaScript</span>
+            <span>Database</span>
+            <span>SaaS</span>
+          </div>
+          <a class="project-link" href="#contact">View Project →</a>
+        </div>
+      </div>
+
+      <!-- Gym System -->
+      <div class="project-card">
+        <div class="project-cover">WEB · MANAGEMENT</div>
+        <div class="project-body">
+          <h3>Gym Management Dashboard</h3>
+          <p>
+            Modern gym management system with member management, dashboard
+            analytics, dark mode, and browser-based data persistence.
+          </p>
+          <div class="project-tags">
+            <span>HTML</span>
+            <span>Tailwind</span>
+            <span>JavaScript</span>
+            <span>LocalStorage</span>
+          </div>
+          <a class="project-link" href="#contact">View Project →</a>
+        </div>
+      </div>
+
+      <!-- AI Video Automation -->
+      <div class="project-card">
+        <div class="project-cover">AI · VIDEO · AUTOMATION</div>
+        <div class="project-body">
+          <h3>AI Video Production Workflow</h3>
+          <p>
+            Automated video generation workflow that processes content,
+            creates short-form videos, integrates AI-generated media and
+            prepares videos for automated publishing.
+          </p>
+          <div class="project-tags">
+            <span>n8n</span>
+            <span>AI</span>
+            <span>Video API</span>
+            <span>YouTube</span>
+          </div>
+          <a class="project-link" href="#contact">View Project →</a>
+        </div>
+      </div>
+
+      <!-- Security Tools -->
+      <div class="project-card">
+        <div class="project-cover">CYBERSECURITY · PYTHON</div>
+        <div class="project-body">
+          <h3>Python Security Toolkit</h3>
+          <p>
+            Collection of Python-based security utilities for network
+            discovery, service analysis, automation, data collection,
+            and security research workflows.
+          </p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Nmap</span>
+            <span>Requests</span>
+            <span>Automation</span>
+          </div>
+          <a class="project-link" href="#contact">View Project →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+```
+
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-card">
+        <div>
+          <h2>Let's build something together</h2>
+          <p>Whether it's a website, a security review, a design, or an automation idea — feel free to reach out. I usually reply within a day.</p>
+        </div>
+        <ul class="contact-list">
+          <li>
+            <a href="tel:01123961290">
+              <span class="ic">
+                <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.574 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </span>
+              Number Phone
+            </a>
+          </li>
+                  <li>
+            <a href="mailto:m.mahmoud.ofc@gmail.com" id="link-email">
+              <span class="ic">
+                <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" fill="none" stroke-width="2">
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+  <polyline points="22,6 12,13 2,6"/>
+</svg>
+              </span>
+             Gmail
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/mahmoudofc" id="link-github">
+              <span class="ic">
+                <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                </svg>
+              </span>
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/mahmoud-mohamed-aa5b76390" id="link-linkedin">
+              <span class="ic">
+                <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                  <rect x="2" y="9" width="4" height="12"/>
+                  <circle cx="4" cy="4" r="2"/>
+                </svg>
+              </span>
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/mahmoudofc1" id="link-twitter">
+              <span class="ic">
+                <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4l11.733 16h4.267l-11.733 -16z"/>
+                  <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/>
+                </svg>
+              </span>
+              Twitter
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/share/1AyVpZzrUA/" id="link-facebook">
+              <span class="ic">
+                <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                </svg>
+              </span>
+              Facebook
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © <span id="year"></span> Mahmoud Mohamed. Built with code, secured with care.
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // typewriter (reduced motion aware)
+  const roles = ['Web Developer', 'Cyber Security Enthusiast', 'Graphic Designer', 'AI Automation Builder'];
+  const el = document.getElementById('role-text');
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (!prefersReduced) {
+    let roleIndex = 0, charIndex = 0, deleting = false;
+    function tick() {
+      const current = roles[roleIndex];
+      if (!deleting) {
+        charIndex++;
+        el.textContent = current.slice(0, charIndex);
+        if (charIndex === current.length) {
+          deleting = true;
+          setTimeout(tick, 1400);
+          return;
+        }
+      } else {
+        charIndex--;
+        el.textContent = current.slice(0, charIndex);
+        if (charIndex === 0) {
+          deleting = false;
+          roleIndex = (roleIndex + 1) % roles.length;
+        }
+      }
+      setTimeout(tick, deleting ? 35 : 60);
+    }
+    setTimeout(tick, 900);
+  }
+</script>
+</body>
+</html>
