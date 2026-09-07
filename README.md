@@ -7,7 +7,7 @@
   <img
     src="./photo_2026-08-31_10-39-06.jpg"
     alt="Mahmoud Mohamed Attia Abdo"
-    width="100%"
+    width="50%"
   />
 </p>
 
