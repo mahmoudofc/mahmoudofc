@@ -3,6 +3,12 @@
 > Web Developer | Cybersecurity Learner | Python Developer | AI & Automation Enthusiast
 
 ---
+<img
+  src="photo_2026-08-31_10-39-06.jpg"
+  alt="Dashboard"
+  style="width: 100%; max-width: 1200px;"
+>
+
 
 ## 👋 About Me
 
