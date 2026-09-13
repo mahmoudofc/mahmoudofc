@@ -8,7 +8,7 @@
   <img
     src="./photo_2026-08-31_10-39-06.jpg"
     alt="Mahmoud Mohamed Attia Abdo"
-    width="50%"
+    width="45%"
   />
 </p>
 
@@ -39,7 +39,7 @@ I focus on writing clean code, understanding how systems work under the hood, an
 </p>
 
 <p align="center">
-  Zagazig, Sharqia, Egypt &nbsp;|&nbsp; 01123961290
+  Zagazig, Sharqia, Egypt &nbsp;·&nbsp; 01123961290
 </p>
 
 ---
@@ -60,22 +60,22 @@ I focus on writing clean code, understanding how systems work under the hood, an
 
 ## What I Am Working On
 
-<table>
+<table align="center">
   <tr>
-    <td><strong>Currently Building</strong></td>
-    <td>Web applications and exploring cybersecurity fundamentals</td>
+    <td align="left"><strong>Currently Building</strong></td>
+    <td align="left">Web applications and exploring cybersecurity fundamentals</td>
   </tr>
   <tr>
-    <td><strong>Currently Learning</strong></td>
-    <td>AI, Automation, and Ethical Hacking</td>
+    <td align="left"><strong>Currently Learning</strong></td>
+    <td align="left">AI, Automation, and Ethical Hacking</td>
   </tr>
   <tr>
-    <td><strong>Approach</strong></td>
-    <td>Build, break, learn, and rebuild better</td>
+    <td align="left"><strong>Approach</strong></td>
+    <td align="left">Build, break, learn, and rebuild better</td>
   </tr>
   <tr>
-    <td><strong>Goal</strong></td>
-    <td>Turn technical knowledge into real-world solutions</td>
+    <td align="left"><strong>Goal</strong></td>
+    <td align="left">Turn technical knowledge into real-world solutions</td>
   </tr>
 </table>
 
@@ -84,12 +84,12 @@ I focus on writing clean code, understanding how systems work under the hood, an
 ## GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=mahmoudofc&show_icons=true&theme=radical&hide_border=true&count_private=true" alt="GitHub Stats" height="165" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mahmoudofc&theme=radical&hide_border=true" alt="GitHub Streak" height="165" />
+  <img src="https://github-readme-stats.vercel.app/api?username=mahmoudofc&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub Stats" height="170" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mahmoudofc&theme=radical&hide_border=true" alt="GitHub Streak" height="170" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mahmoudofc&layout=compact&theme=radical&hide_border=true" alt="Top Languages" height="165" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mahmoudofc&layout=compact&theme=radical&hide_border=true&langs_count=8" alt="Top Languages" height="170" />
 </p>
 
 ---
@@ -97,7 +97,7 @@ I focus on writing clean code, understanding how systems work under the hood, an
 ## GitHub Trophies
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=mahmoudofc&theme=radical&no-frame=true&no-bg=true&row=1&column=7" alt="GitHub Trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=mahmoudofc&theme=radical&no-frame=true&no-bg=true&row=1&column=7&margin-w=10" alt="GitHub Trophies" />
 </p>
 
 ---
@@ -105,7 +105,7 @@ I focus on writing clean code, understanding how systems work under the hood, an
 ## Contribution Graph
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=mahmoudofc&theme=radical&hide_border=true&area=true" alt="Contribution Graph" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=mahmoudofc&theme=radical&hide_border=true&area=true&custom_title=Contribution%20Graph" alt="Contribution Graph" />
 </p>
 
 ---
