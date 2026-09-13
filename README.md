@@ -102,14 +102,6 @@ I focus on writing clean code, understanding how systems work under the hood, an
 
 ---
 
-## Contribution Graph
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=mahmoudofc&theme=radical&hide_border=true&area=true&custom_title=Contribution%20Graph" alt="Contribution Graph" />
-</p>
-
----
-
 ## Profile Views
 
 <p align="center">
