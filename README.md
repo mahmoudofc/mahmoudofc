@@ -6,7 +6,7 @@
 
 ## About Me
 
-I am a 15-year-old technology enthusiast from Zagazig, Egypt. I turn ideas into functional systems through hands-on building and experimentation.
+I am a 16-year-old technology enthusiast from Zagazig, Egypt. I turn ideas into functional systems through hands-on building and experimentation.
 
 My learning approach is simple: **build, break, learn, and rebuild better**.
 
