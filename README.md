@@ -1,8 +1,9 @@
 # Mahmoud Mohamed Attia Abdo
 
-> Web Developer | Cybersecurity Learner | Python Developer | AI & Automation Enthusiast
+**Web Developer · Cybersecurity Learner · Python Developer · AI & Automation Enthusiast**
 
 ---
+
 <p align="center">
   <img
     src="./photo_2026-08-31_10-39-06.jpg"
@@ -11,47 +12,112 @@
   />
 </p>
 
+---
 
-## 👋 About Me
+## About Me
 
-I'm a 15-year-old technology enthusiast from Zagazig, Egypt. I turn ideas into functional systems through hands-on building and experimentation. My learning approach is simple: **build, break, learn, and rebuild better**.
+I am a 15-year-old technology enthusiast from Zagazig, Egypt. I turn ideas into functional systems through hands-on building and experimentation.
+
+My learning approach is simple: **build, break, learn, and rebuild better**.
+
+I focus on writing clean code, understanding how systems work under the hood, and creating tools that solve real problems. Whether it is a web application, a Python automation script, or a security experiment, I care about clarity, structure, and results.
 
 ---
 
-## 📬 Connect With Me
+## Connect With Me
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mahmoud-mohamed-aa5b76390)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mahmoudofc)
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:m.mahmoud.ofc@gmail.com)
+<p align="center">
+  <a href="https://www.linkedin.com/in/mahmoud-mohamed-aa5b76390">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://github.com/mahmoudofc">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+  <a href="mailto:m.mahmoud.ofc@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
+  </a>
+</p>
 
-📍 Zagazig, Sharqia, Egypt
-📞 01123961290
-
----
-
-## 🛠️ Tech Stack
-
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+<p align="center">
+  Zagazig, Sharqia, Egypt &nbsp;|&nbsp; 01123961290
+</p>
 
 ---
 
-## 🚀 Quick Facts
+## Tech Stack
 
-- 🔭 Currently building: Web applications & exploring cybersecurity
-- 🌱 Learning: AI, Automation & Ethical Hacking
-- ⚡ Fun fact: I learn by building, breaking, and rebuilding better
-- 🎯 Goal: Turn technical knowledge into real-world solutions
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
+</p>
 
 ---
 
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=mahmoudofc&label=Profile%20Views&color=0e75b6&style=flat" />
-  <br />
+## What I Am Working On
+
+<table>
+  <tr>
+    <td><strong>Currently Building</strong></td>
+    <td>Web applications and exploring cybersecurity fundamentals</td>
+  </tr>
+  <tr>
+    <td><strong>Currently Learning</strong></td>
+    <td>AI, Automation, and Ethical Hacking</td>
+  </tr>
+  <tr>
+    <td><strong>Approach</strong></td>
+    <td>Build, break, learn, and rebuild better</td>
+  </tr>
+  <tr>
+    <td><strong>Goal</strong></td>
+    <td>Turn technical knowledge into real-world solutions</td>
+  </tr>
+</table>
+
+---
+
+## GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=mahmoudofc&show_icons=true&theme=radical&hide_border=true&count_private=true" alt="GitHub Stats" height="165" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mahmoudofc&theme=radical&hide_border=true" alt="GitHub Streak" height="165" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mahmoudofc&layout=compact&theme=radical&hide_border=true" alt="Top Languages" height="165" />
+</p>
+
+---
+
+## GitHub Trophies
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=mahmoudofc&theme=radical&no-frame=true&no-bg=true&row=1&column=7" alt="GitHub Trophies" />
+</p>
+
+---
+
+## Contribution Graph
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=mahmoudofc&theme=radical&hide_border=true&area=true" alt="Contribution Graph" />
+</p>
+
+---
+
+## Profile Views
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=mahmoudofc&label=Profile%20Views&color=0e75b6&style=flat" alt="Profile Views" />
+</p>
+
+---
+
+<p align="center">
   <i>"Building the future, one project at a time."</i>
-</div>
+</p>
