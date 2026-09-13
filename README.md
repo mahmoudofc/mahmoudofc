@@ -4,16 +4,6 @@
 
 ---
 
-<p align="center">
-  <img
-    src="./photo_2026-08-31_10-39-06.jpg"
-    alt="Mahmoud Mohamed Attia Abdo"
-    width="45%"
-  />
-</p>
-
----
-
 ## About Me
 
 I am a 15-year-old technology enthusiast from Zagazig, Egypt. I turn ideas into functional systems through hands-on building and experimentation.
