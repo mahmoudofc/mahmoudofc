@@ -1,0 +1,42 @@
+{
+  "name": "محمود محمد | AI Developer & Cybersecurity",
+  "short_name": "Mahmoud Mohamed",
+  "description": "محمود محمد — مطور مصري متخصص في الذكاء الاصطناعي، الأمن السيبراني، تطوير المواقع، وأتمتة AI.",
+  "start_url": "/mahmoudofc/",
+  "scope": "/mahmoudofc/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#05050a",
+  "theme_color": "#05050a",
+  "lang": "ar",
+  "dir": "rtl",
+  "categories": ["business", "developer", "portfolio", "technology"],
+  "icons": [
+    {
+      "src": "https://mahmoudofc.vercel.app/photo_2026-08-31_10-39-06.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://mahmoudofc.vercel.app/photo_2026-08-31_10-39-06.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "المشاريع",
+      "short_name": "Projects",
+      "url": "/mahmoudofc/projects.html",
+      "description": "استعرض مشاريع محمود محمد"
+    },
+    {
+      "name": "تواصل",
+      "short_name": "Contact",
+      "url": "/mahmoudofc/#contact",
+      "description": "تواصل مع محمود محمد"
+    }
+  ]
+}
