@@ -1,39 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <url>
     <loc>https://mahmoudofc.github.io/mahmoudofc/</loc>
-    <lastmod>2025-09-7</lastmod>
+    <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mahmoudofc.github.io/mahmoudofc/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mahmoudofc.github.io/mahmoudofc/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mahmoudofc.github.io/mahmoudofc/"/>
+    <image:image>
+      <image:loc>https://mahmoudofc.vercel.app/photo_2026-08-31_10-39-06.jpg</image:loc>
+      <image:title>Mahmoud Mohamed — AI Developer & Cybersecurity Specialist</image:title>
+    </image:image>
   </url>
 
   <url>
-    <loc>facebook.com/share/1AyVpZzrUA/</loc>
-    <lastmod>2025-09-7</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://drive.google.com/file/d/1sIkylcwVW5Bcj539RFdl-Q2Tu9Y3SuW8/view?usp=sharing</loc>
-    <lastmod>2025-09-7</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://x.com/mahmoudofc1</loc>
-    <lastmod>2025-09-7</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://www.linkedin.com/in/mahmoud-mohamed-aa5b76390</loc>
-    <lastmod>2025-09-7</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://mahmoudofc.github.io/mahmoudofc/projects.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
 
 </urlset>
