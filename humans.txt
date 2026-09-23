@@ -1,0 +1,23 @@
+/* TEAM */
+Developer: Mahmoud Mohamed
+Role: AI Developer · Cybersecurity Specialist · Web Developer · Graphic Designer
+Location: Egypt
+Email: m.mahmoud.ofc@gmail.com
+Phone: 01123961290
+GitHub: https://github.com/mahmoudofc
+LinkedIn: https://www.linkedin.com/in/mahmoud-mohamed-aa5b76390
+Twitter: https://x.com/mahmoudofc1
+Facebook: https://www.facebook.com/share/1AyVpZzrUA/
+
+/* THANKS */
+Open Source Community
+Google Fonts — Cairo, Space Grotesk, JetBrains Mono
+All open source contributors
+
+/* SITE */
+Last update: 2025
+Language: Arabic, English
+Doctype: HTML5
+IDE: VS Code
+Standards: HTML5, CSS3, ES6+
+Components: Google Fonts, Intersection Observer, Service Worker (optional)
