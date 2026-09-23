@@ -1,1 +1,15 @@
+# robots.txt for Mahmoud Mohamed Portfolio
+# https://mahmoudofc.github.io/mahmoudofc/
 
+User-agent: *
+Allow: /
+Allow: /projects.html
+
+# Block build/temp files
+Disallow: /*.json$
+Disallow: /*.log$
+Disallow: /tmp/
+Disallow: /private/
+
+# Sitemap
+Sitemap: https://mahmoudofc.github.io/mahmoudofc/sitemap.xml
